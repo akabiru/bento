@@ -1,17 +1,21 @@
-.nav-bar {
+.nav {
   border-bottom: 1px solid grey;
-  width: 800px;
-
-
+  width: 100%;
 }
-.bento{
+.nav .nav--body {
+  width: 800px;
+  margin: 0 auto;
+}
+.nav--brand{
   width: 300px;
   float:left;
 }
-
-.list{
+.nav--menu{
   width: 300px;
   float: right;
+}
+.clearfix {
+  clear: both;
 }
 
 nav ul {
