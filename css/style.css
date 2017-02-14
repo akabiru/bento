@@ -10,9 +10,13 @@
   width: 300px;
   float:left;
 }
+
+.nav--body a {
+  text-decoration: none;
+}
+
 .nav--menu{
   width: 300px;
-  float: right;
 }
 .clearfix {
   clear: both;
