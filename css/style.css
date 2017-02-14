@@ -7,37 +7,44 @@
   margin: 0 auto;
 }
 .nav--brand{
-  width: 300px;
+  width: 100px;
   float:left;
 }
-
 .nav--body a {
   text-decoration: none;
 }
-
-.nav--menu{
+.nav--menu {
   width: 300px;
+  float: left;
 }
-.clearfix {
-  clear: both;
-}
-
-nav ul {
+.nav--menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-nav ul li {
+.nav--menu ul li {
   display: inline;
-  float: right;
+  margin-right: 15px;
+  float: left;
+}
+
+.clearfix {
+  clear: both;
 }
 
 div.card {
-  height: 20%;
-  width: 25%;
   text-align: center;
   background: red;
+  padding: 25px;
+}
+#one,#two {
+  float: left;
+}
+#three {
+  clear: left;
+}
+#four,#five {
+  float: right;
 }
 
 div.card:hover {
