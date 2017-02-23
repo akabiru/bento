@@ -26,13 +26,22 @@ $(document).ready(function() {
     </div>'
     */
 
-    var title = "Hello World!"
     var html = "";
-    html += '<div id="one" class="card">';
-    	html += '<h2 class="card--topic">';
-    		html += '<a href="#">' + title + '</a>';
-    	html += '</h2>';
-    html += '</div>';
+    
+    function createCards() {
+      for (i=0; i < cards.length; i++) {
+      var title = cards[i].title;
 
+      html += '<div id="one" class="card">';
+        html += '<h2 class="card--topic">';
+          html += '<a href="#">' + title + '</a>';
+        html += '</h2>';
+        html += '<p><a href="' + cards[i].links[0] + '">'+ cards[i].links[0] +'</a></p>';
+        html += '<p><a href="' + cards[i].links[1] + '">'+ cards[i].links[1] +'</a></p>';
+      html += '</div>';
+      }
+    }
+
+  createCards();
 	$(".cards").html(html);
 })
