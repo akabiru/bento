@@ -1,47 +1,37 @@
 $(document).ready(function() {
-	var cards = [
-		{
-			title: "Web Fundamentals",
-			links: [
-				"http://google.com/",
-				"http://stackoverflow.com/"
-			]
-		},
-		{
-			title: "HTML",
-			links: [
-				"http://google.com/",
-				"http://stackoverflow.com/"
-			]
-		},
-	]
+	function init() {
+		// Pull the data using AJAX
 
-	/*
-	'<div id="one" class="card">
-      <h2 class="card--topic">
-        <a href="#">Web Fundamentals</a>
-      </h2>
-      <p><a href="#" class="card--description">How the web works</a></p>
-      <p><a href="#" class="card--link">20 things I learned.</a></p>
-    </div>'
-    */
-
-    var html = "";
+		// Populate the page after you get the data
+	}
     
     function createCards() {
+    	var html = "";
       for (i=0; i < cards.length; i++) {
-      var title = cards[i].title;
-
-      html += '<div id="one" class="card">';
-        html += '<h2 class="card--topic">';
-          html += '<a href="#">' + title + '</a>';
-        html += '</h2>';
-        html += '<p><a href="' + cards[i].links[0] + '">'+ cards[i].links[0] +'</a></p>';
-        html += '<p><a href="' + cards[i].links[1] + '">'+ cards[i].links[1] +'</a></p>';
-      html += '</div>';
+      	var card = cards[i];
+      	html += createCard(card);
       }
+      return html;
     }
 
-  createCards();
-	$(".cards").html(html);
+    function createCard(card) {
+    	var html = "";
+	    	html += '<div id="one" class="card">';
+	        html += '<h2 class="card--topic">';
+	          html += '<a href="#">' + card.title + '</a>';
+	        html += '</h2>';
+
+	        // Add support for description
+
+	        // Turn link generation into a function
+
+	        // Fix link generation with new JSON format
+	        
+	        html += '<p><a href="' + cards[i].links[0] + '">'+ cards[i].links[0] +'</a></p>';
+	        html += '<p><a href="' + cards[i].links[1] + '">'+ cards[i].links[1] +'</a></p>';
+	      html += '</div>';
+	    return html;
+    }
+
+	$(".cards").html(createCards());
 })

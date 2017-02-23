@@ -1,0 +1,30 @@
+[
+	{
+		title: "Web Fundamentals",
+		description: "How the web works",
+		links: [
+			{
+				url: "http://google.com/",
+				title: "Google"
+			},
+			{
+				url: "http://stackoverflow.com/"
+				title: "Stack Overflow"
+			}
+		]
+	},
+	{
+		title: "HTML",
+		description: "Adding content to your website",
+		links: [
+			{
+				url: "http://google.com/",
+				title: "Google"
+			},
+			{
+				url: "http://stackoverflow.com/"
+				title: "Stack Overflow"
+			}
+		]
+	},
+]

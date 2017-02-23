@@ -1,7 +1,9 @@
 body {
   margin: 0;
 }
-
+* {
+  box-sizing: border-box;
+}
 .nav {
   border-bottom: 1px solid grey;
   width: 100%;
@@ -53,13 +55,13 @@ body {
 }
 
 div.card {
-  margin: 5px;
   text-align: center;
   background: lightgrey;
   padding: 10px;
   float: left;
   width: 20%;
-  height: 200px;
+  height: 0px;
+  padding-bottom: 20%;
   border: 5px solid white;
 }
 
