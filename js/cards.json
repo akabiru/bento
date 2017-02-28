@@ -28,5 +28,50 @@
 				"title": "Stack Overflow"
 			}
 		]
+	},
+	{
+		"id": 3,
+		"title": "CSS",
+		"description": "Styling your website",
+		"links": [
+			{
+				"url": "http://google.com/",
+				"title": "Google"
+			},
+			{
+				"url": "http://stackoverflow.com/",
+				"title": "Stack Overflow"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"title": "JavaScript",
+		"description": "Make a website interactive",
+		"links": [
+			{
+				"url": "http://google.com/",
+				"title": "Google"
+			},
+			{
+				"url": "http://stackoverflow.com/",
+				"title": "Stack Overflow"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"title": "jQuery",
+		"description": "Write JavaScript faster",
+		"links": [
+			{
+				"url": "http://google.com/",
+				"title": "Google"
+			},
+			{
+				"url": "http://stackoverflow.com/",
+				"title": "Stack Overflow"
+			}
+		]
 	}
 ]

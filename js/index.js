@@ -4,27 +4,22 @@ $(document).ready(function () {
     $.get('/js/cards.json', function (cardsData) {
       // Populate the page after you get the data
       var parsedCardsData = JSON.parse(cardsData);
-      console.log('Cards: ', parsedCardsData);
-      $(".cards").html(createCards(parsedCardsData));
-
-      $('.card').on('click', function () {
-        console.log('This is happening: ', $(this));
-      });
+      createCards(parsedCardsData);
     });
   }
 
   function createCards(cards) {
-    var html = "";
     for (var i = 0; i < cards.length; i++) {
       var card = cards[i];
-      html += createCard(card);
+      $(createCard(card)).appendTo(".cards").on('click', function() {
+        console.log($(this).attr("data-title"));
+      });
     }
-    return html;
   }
 
   function createCard(card) {
     var html = "";
-    html += '<div class="card">';
+    html += '<div id="card_' + card.id + '" class="card" data-title="' + card.title + '">';
     html += '<h2 class="card--topic">';
     html += '<a href="#">' + card.title + '</a>';
     html += '</h2>';
